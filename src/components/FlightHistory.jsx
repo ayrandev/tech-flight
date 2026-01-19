@@ -50,8 +50,13 @@ export function FlightHistory({ historico }) {
             <hr className="border-gray-600 my-1" />
 
             <div className="flex justify-between">
-              <span className="text-gray-400">Status:</span>
-              <span className="text-green-400 font-medium">
+              <span
+                className={`font-medium ${
+                  item.resultado.status_predicao === "ATRASADO"
+                    ? "text-orange-400"
+                    : "text-green-400"
+                }`}
+              >
                 {item.resultado.status_predicao}
               </span>
             </div>

@@ -8,7 +8,8 @@ export default function App() {
 
   return (
     <section className="min-h-screen w-full bg-gray-800 flex flex-col items-center px-4">
-      <header className="w-full max-w-6xl flex items-center justify-center gap-3 py-10">
+      {/* Header */}
+      <header className="w-full max-w-6xl flex items-center justify-center gap-2 py-2">
         <img
           src="/icon.png"
           alt="Flight On Time"
@@ -19,14 +20,22 @@ export default function App() {
         </h1>
       </header>
 
-      <div className="w-full max-w-6xl flex flex-col md:flex-row gap-6 justify-center">
+      {/* Main */}
+      <main className="w-full max-w-6xl flex flex-col md:flex-row gap-6 justify-center flex-1">
         <FlightForm
           onSubmit={buscarDados}
           loading={loading}
           error={error}
         />
         <FlightHistory historico={historico} />
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="w-full py-2 mt-10 border-t border-gray-700 text-center">
+        <p className="text-sm text-gray-400">
+          TechFlight — Projeto desenvolvido no Hackathon
+        </p>
+      </footer>
     </section>
   );
 }

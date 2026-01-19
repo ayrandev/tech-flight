@@ -4,7 +4,7 @@ import { aeroportosOptions } from "../data/aeroportosOptions";
 
 export function FlightHistory({ historico }) {
   return (
-    <div className="w-full max-w-md border border-gray-400 p-4 rounded-lg text-gray-200 max-h-[420px] overflow-y-auto flex flex-col gap-3">
+    <div className="w-full max-w-md border border-gray-400 p-4 rounded-lg text-gray-200 max-h-[460px] overflow-y-auto flex flex-col gap-3">
       {historico.length > 0 ? (
         historico.map((item) => (
           <div

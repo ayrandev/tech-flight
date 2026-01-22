@@ -97,6 +97,8 @@ export const aeroportosOptions = [
   { value: "SBFZ", label: "(SBFZ) Aeroporto Internacional Pinto Martins, Fortaleza (FOR) - CE, Brasil" },
   { value: "SBSV", label: "(SBSV) Aeroporto Internacional Deputado Luís Eduardo Magalhães, Salvador (SSA) - BA, Brasil" },
   { value: "SBRF", label: "(SBRF) Aeroporto Internacional dos Guararapes, Recife (REC) - PE, Brasil" },
+  { value: "SBJU", label: "(SBJU) Aeroporto Regional do Cariri – Orlando Bezerra de Menezes, Juazeiro do Norte (JDO) - CE, Brasil" },
+  { value: "SBCO", label: "(SBCO) Base Aérea de Canoas, Canoas (QNS) - RS, Brasil" },
   { value: "SBPA", label: "(SBPA) Aeroporto Internacional Salgado Filho, Porto Alegre (POA) - RS, Brasil" },
   { value: "SBFL", label: "(SBFL) Aeroporto Internacional Hercílio Luz, Florianópolis (FLN) - SC, Brasil" },
   { value: "SBCT", label: "(SBCT) Aeroporto Internacional Afonso Pena, Curitiba (CWB) - PR, Brasil" },

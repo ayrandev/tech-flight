@@ -50,13 +50,14 @@ export function SelectField({
   }, []);
 
   /* 🔹 Filtro autocomplete (nome, cidade, sigla) */
-  const filteredOptions = options
-    .filter((option) =>
-      normalize(`${option.label} ${option.value}`).includes(
-        normalize(search)
-      )
-    )
-    .slice(0, 15); // limite de performance
+    const filteredOptions = (search
+      ? options.filter((option) =>
+          normalize(`${option.label} ${option.value}`).includes(
+            normalize(search)
+          )
+        )
+      : options
+    ).slice(0, 200);
 
   function handleSelect(option) {
     onChange({
